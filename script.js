@@ -55,8 +55,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const texto = document.querySelector('#paragra');
 
     if (produtoImg && texto) {
-        // Manipulação de string para obter o ID do produto, retro-compatível
-        const id = window.location.search.split('id=')[1];
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get('id');
 
         texto.innerHTML = "";
         let mensagem = "";
@@ -66,27 +66,27 @@ document.addEventListener("DOMContentLoaded", function () {
             case '1':
                 produtoImg.src = 'minha_imagem.jpeg';
                 mensagem = "Você acaba de comprar o conjunto de diamantes<br>Valor: 3,000R$<br>Valor destinado à doação: 1,000R$<br>Infelizmente só estamos com a função de PIX habilitada atualmente<br>";
-                linkQRCode = "https://seusite.com/pagamento?id=1";
+                linkQRCode = "https://photos.app.goo.gl/ZJocUxpUMEiJzRjv5";
                 break;
             case '2':
                 produtoImg.src = 'joiasvermelhas.jpeg';
                 mensagem = "Você acaba de comprar o conjunto de rubis<br>Valor: 10,000R$<br>Valor destinado à doação: 4,000R$<br>Infelizmente só estamos com a função de PIX habilitada atualmente<br>";
-                linkQRCode = "https://seusite.com/pagamento?id=2";
+                linkQRCode = "https://photos.app.goo.gl/ZJocUxpUMEiJzRjv5";
                 break;
             case '3':
                 produtoImg.src = 'joiasverdes.jpeg';
                 mensagem = "Você acaba de comprar o conjunto de esmeraldas<br>Valor: 9,000R$<br>Valor destinado à doação: 2,000R$<br>Infelizmente só estamos com a função de PIX habilitada atualmente<br>";
-                linkQRCode = "https://seusite.com/pagamento?id=3";
+                linkQRCode = "https://photos.app.goo.gl/ZJocUxpUMEiJzRjv5";
                 break;
             case '4':
                 produtoImg.src = 'perolas.jpeg';
                 mensagem = "Você acaba de comprar o conjunto de pérolas e ouro<br>Valor: 8,000R$<br>Valor destinado à doação: 3,000R$<br>Infelizmente só estamos com a função de PIX habilitada atualmente<br>";
-                linkQRCode = "https://seusite.com/pagamento?id=4";
+                linkQRCode = "https://photos.app.goo.gl/ZJocUxpUMEiJzRjv5";
                 break;
             case '5':
                 produtoImg.src = 'joiasroxas.jpeg';
                 mensagem = "Você acaba de comprar o conjunto de diamantes roxo<br>Valor: 100,000R$<br>Valor destinado à doação: 20,000R$<br>Infelizmente só estamos com a função de PIX habilitada atualmente<br>";
-                linkQRCode = "https://seusite.com/pagamento?id=5";
+                linkQRCode = "https://photos.app.goo.gl/ZJocUxpUMEiJzRjv5";
                 break;
             default:
                 produtoImg.src = 'variavel.jpeg';
@@ -103,8 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     height: 150
                 });
             } else {
-                // Fallback para navegadores sem suporte ao QRCode.js
-                document.getElementById("qrcode").innerHTML = "Para finalizar a compra, acesse: <a href='" + linkQRCode + "'>" + linkQRCode + "</a>";
+                document.getElementById("qrcode").innerHTML = "Para finalizar a compra, acesse: " + linkQRCode;
             }
         }
     }
