@@ -1,75 +1,69 @@
-    <!DOCTYPE html>
-    <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-        <title>Auris</title>
-    
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>
-            Seja bem-vindo à loja Auris<br>
-            A loja onde sua compra vira doação
-        </h1>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auris</title>
 
-        <div class="slide-completo">
-            <div class="lado-wrapper">
-                <img src="fundoamazonia.jpeg" alt="imgama">
-                <input type="button" value="Ver causa" id="amazon">
-            </div>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>
+        Seja bem-vindo à loja Auris<br>
+        A loja onde sua compra vira doação
+    </h1>
 
-            <div class="slideshow">
-                <img src="imagem1.jpeg" alt="Slide 1" class="active">
-                <img src="imagem2.jpeg" alt="Slide 2">
-                <img src="imagem03.jpeg" alt="Slide 3">
-                <img src="minha_imagem.jpeg" alt="Slide 4">
-                <img src="joiasvermelhas.jpeg" alt="Slide 5">
-                <img src="joiasverdes.jpeg" alt="Slide 6">
-                <img src="perolas.jpeg" alt="Slide 7">
-                <img src="joiasroxas.jpeg" alt="Slide 8">
-            </div>
-
-            <div class="lado-wrapper">
-                <img src="aacd.jpeg" alt="imgaa">
-                <input type="button" value="Ver causa" id="siteacd">
-            </div>
+    <div class="slide-completo">
+        <div class="lado-wrapper">
+            <img src="fundoamazonia.jpeg" alt="imgama">
+            <input type="button" value="Ver causa" id="amazon">
         </div>
 
-        <div id="botao">
-            <input type="button" value="Ver produtos" id="see">
-            <input type="button" value="Se juntar a nós" id="proximo" ><br>
+        <div class="slideshow">
+            <img src="imagem1.jpeg" alt="Slide 1" class="active">
+            <img src="imagem2.jpeg" alt="Slide 2">
+            <img src="imagem03.jpeg" alt="Slide 3">
+            <img src="minha_imagem.jpeg" alt="Slide 4">
+            <img src="joiasvermelhas.jpeg" alt="Slide 5">
+            <img src="joiasverdes.jpeg" alt="Slide 6">
+            <img src="perolas.jpeg" alt="Slide 7">
+            <img src="joiasroxas.jpeg" alt="Slide 8">
         </div>
 
-        <div class="footer-links">
-            <br>
-            <a href="https://www.instagram.com/gus.pvdbr/" target="_blank" class="footer-btn">Instagram</a>
-            <a href="razaosocial.html" class="footer-btn">Porque fazemos as doações?</a>
-            <a href="https://wa.me/+5569992485502?text=Olá,%20vi%20seu%20anúncio!" target="_blank" class="footer-btn">WhatsApp</a>
+        <div class="lado-wrapper">
+            <img src="aacd.jpeg" alt="imgaa">
+            <input type="button" value="Ver causa" id="siteacd">
         </div>
-        <footer>&copy; Spectree</footer> 
+    </div>
 
-        <script src="script.js"></script>
-        <script>
-            document.getElementById('proximo').onclick = function() {
-                window.location.href = 'cadastro.html'; // substitua pelo nome da página desejada
-            };     
-            document.addEventListener("DOMContentLoaded", function () {
-        const botaoVerProdutos = document.getElementById('see');
+    <div id="botao">
+        <input type="button" value="Ver produtos" id="see">
+        <input type="button" value="Se juntar a nós" id="proximo" ><br>
+    </div>
 
-        if (botaoVerProdutos) {
-            botaoVerProdutos.onclick = () => {
-                window.location.href = 'produtos.html';
-            };
-        }
-    });
-        </script>
-        <script>
-    document.getElementById('proximo').onclick = function() {
-        window.location.href = 'cadastro.html'; // substitua pelo nome da página desejada
-    };z
-</script>   
-    </body>
-    </html>
+    <div class="footer-links">
+        <br>
+        <a href="https://www.instagram.com/gus.pvdbr/" target="_blank" class="footer-btn">Instagram</a>
+        <a href="razaosocial.html" class="footer-btn">Porque fazemos as doações?</a>
+        <a href="https://wa.me/+5569992485502?text=Olá,%20vi%20seu%20anúncio!" target="_blank" class="footer-btn">WhatsApp</a>
+    </div>
+    <footer>&copy; Spectree</footer> 
 
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('proximo').onclick = function() {
+            window.location.href = 'cadastro.html';
+        };     
+        document.addEventListener("DOMContentLoaded", function () {
+            const botaoVerProdutos = document.getElementById('see');
+
+            if (botaoVerProdutos) {
+                botaoVerProdutos.onclick = () => {
+                    window.location.href = 'produtos.html';
+                };
+            }
+        });
+    </script>
+</body>
+</html>

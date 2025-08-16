@@ -1,6 +1,6 @@
 body {
-    background: linear-gradient(135deg, #0B3D2E, #1F6F61);
-    font: normal 15pt Arial;
+    background-color: #0B3D2E;
+    font: normal 15pt sans-serif;
     text-align: left;
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ body {
 
 h1 {
     text-align: center;
-    font: normal 35pt Arial;
+    font: normal 35pt sans-serif;
     color: white;
     background: #092E23;
     padding: 20px 30px;
@@ -51,7 +51,7 @@ footer {
     color: white;
     text-align: center;
     font-style: italic;
-    margin-top: auto; /* fixa no final */
+    margin-top: auto;
 }
 
 .footer-links {
@@ -174,7 +174,7 @@ footer {
     align-items: center;
     gap: 20px;
     padding: 30px 0 10px 0;
-    margin-top: 50px; /* abaixa o botão */
+    margin-top: 50px;
 }
 
 #botao input[type="button"] {
@@ -182,7 +182,7 @@ footer {
     padding: 20px 50px;
     border-radius: 12px;
     border: none;
-    background-color: #092E23; /* igual ao h1 */
+    background-color: #092E23;
     color: white;
     cursor: pointer;
     transition: background 0.3s;
@@ -192,37 +192,39 @@ footer {
     background-color: #17544A;
     color: white;
 }
-#return{
-    font: 10px Arial;
+
+#return {
+    font: 10px sans-serif;
 }
-   .voltar-btn {
-     background-color: #17544A;
-     padding: 10px 15px;
-     border: 1px solid #17544A;
-     cursor: pointer;
-     text-align: right;
-   position: fixed;       
-    top: 50px;              
+
+.voltar-btn {
+    background-color: #17544A;
+    padding: 10px 15px;
+    border: 1px solid #17544A;
+    cursor: pointer;
+    text-align: right;
+    position: fixed;
+    top: 50px;
     left: 20px;
     border-radius: 16px;
-   }
+}
 
 .produto-bg {
-    display: flex; /* organiza imagem e texto em linha */
-    align-items: flex-start; /* alinha ao topo */
-    gap: 20px; /* espaço entre imagem e texto */
-    background-color: #FDF6E3; 
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: #FDF6E3;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    width: 1100px;             
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 1100px;
     max-width: 90%;
-    margin-left: auto; /* centraliza horizontalmente */
+    margin-left: auto;
     margin-right: auto;
 }
 
 #produto-img {
-    width: 400px;   
+    width: 400px;
     height: auto;
     border-radius: 10px;
     display: block;
@@ -232,14 +234,15 @@ footer {
     font-size: 15pt;
     line-height: 1.5;
 }
-.voltar{
+
+.voltar {
     background-color: #17544A;
-     padding: 10px 15px;
-     border: 1px solid #17544A;
-     cursor: pointer;
-     text-align: right;
-   position: fixed;       
-    top: 50px;              
+    padding: 10px 15px;
+    border: 1px solid #17544A;
+    cursor: pointer;
+    text-align: right;
+    position: fixed;
+    top: 50px;
     left: 20px;
     border-radius: 16px;
 }
