@@ -65,27 +65,27 @@ document.addEventListener("DOMContentLoaded", function () {
         switch (id) {
             case '1':
                 produtoImg.src = 'minha_imagem.jpeg';
-                mensagem = "Você acaba de comprar o conjunto de diamantes<br>Valor: 3,000R$<br>Valor destinado à doação: 1,000R$<br>Infelizmente só estamos com a função de PIX habilitada atualmente<br>";
+                mensagem = "Você acaba de comprar o conjunto de diamantes<br>Valor: 3,000,00R$<br>Valor destinado à doação: 1,000,00R$<br>Infelizmente só estamos com a função de PIX habilitada atualmente<br>";
                 linkQRCode = "https://photos.app.goo.gl/ZJocUxpUMEiJzRjv5";
                 break;
             case '2':
                 produtoImg.src = 'joiasvermelhas.jpeg';
-                mensagem = "Você acaba de comprar o conjunto de rubis<br>Valor: 10,000R$<br>Valor destinado à doação: 4,000R$<br>Infelizmente só estamos com a função de PIX habilitada atualmente<br>";
+                mensagem = "Você acaba de comprar o conjunto de rubis<br>Valor: 10,000,00R$<br>Valor destinado à doação: 4,000,00R$<br>Infelizmente só estamos com a função de PIX habilitada atualmente<br>";
                 linkQRCode = "https://photos.app.goo.gl/ZJocUxpUMEiJzRjv5";
                 break;
             case '3':
                 produtoImg.src = 'joiasverdes.jpeg';
-                mensagem = "Você acaba de comprar o conjunto de esmeraldas<br>Valor: 9,000R$<br>Valor destinado à doação: 2,000R$<br>Infelizmente só estamos com a função de PIX habilitada atualmente<br>";
+                mensagem = "Você acaba de comprar o conjunto de esmeraldas<br>Valor: 9,000,00R$<br>Valor destinado à doação: 2,000,00R$<br>Infelizmente só estamos com a função de PIX habilitada atualmente<br>";
                 linkQRCode = "https://photos.app.goo.gl/ZJocUxpUMEiJzRjv5";
                 break;
             case '4':
                 produtoImg.src = 'perolas.jpeg';
-                mensagem = "Você acaba de comprar o conjunto de pérolas e ouro<br>Valor: 8,000R$<br>Valor destinado à doação: 3,000R$<br>Infelizmente só estamos com a função de PIX habilitada atualmente<br>";
+                mensagem = "Você acaba de comprar o conjunto de pérolas e ouro<br>Valor: 8,000,00R$<br>Valor destinado à doação: 3,000,00R$<br>Infelizmente só estamos com a função de PIX habilitada atualmente<br>";
                 linkQRCode = "https://photos.app.goo.gl/ZJocUxpUMEiJzRjv5";
                 break;
             case '5':
                 produtoImg.src = 'joiasroxas.jpeg';
-                mensagem = "Você acaba de comprar o conjunto de diamantes roxo<br>Valor: 100,000R$<br>Valor destinado à doação: 20,000R$<br>Infelizmente só estamos com a função de PIX habilitada atualmente<br>";
+                mensagem = "Você acaba de comprar o conjunto de diamantes roxo<br>Valor: 100,000,00R$<br>Valor destinado à doação: 20,000,00R$<br>Infelizmente só estamos com a função de PIX habilitada atualmente<br>";
                 linkQRCode = "https://photos.app.goo.gl/ZJocUxpUMEiJzRjv5";
                 break;
             default:
