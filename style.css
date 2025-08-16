@@ -251,22 +251,14 @@ footer {
 @media (max-width: 768px) {
     .produto-bg {
         flex-direction: column;
-        align-items: center; /* Centraliza horizontalmente os itens */
+        align-items: center;
         text-align: center;
     }
 
     .produto-bg img {
-        max-width: 80%; /* Reduz um pouco a largura da imagem para centralizar melhor */
+        max-width: 100%;
         height: auto;
         margin-bottom: 20px;
-    }
-
-    #produto-img {
-        width: auto; /* Permite que a largura seja controlada pelo max-width */
-        max-width: 80%;
-        display: block; /* Garante que a margem automática funcione */
-        margin-left: auto;
-        margin-right: auto; /* Centraliza a imagem */
     }
 
     .produto-bg .texto {
@@ -275,5 +267,14 @@ footer {
 
     .produto-bg #qrcode {
         margin-top: 20px;
+    }
+    
+    #botao {
+        flex-direction: column;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
     }
 }
