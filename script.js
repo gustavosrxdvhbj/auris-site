@@ -55,8 +55,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const texto = document.querySelector('#paragra');
 
     if (produtoImg && texto) {
-        const params = new URLSearchParams(window.location.search);
-        const id = params.get('id');
+        // Manipulação de string para obter o ID do produto, retro-compatível
+        const id = window.location.search.split('id=')[1];
 
         texto.innerHTML = "";
         let mensagem = "";
@@ -103,7 +103,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     height: 150
                 });
             } else {
-                document.getElementById("qrcode").innerHTML = "Para finalizar a compra, acesse: " + linkQRCode;
+                // Fallback para navegadores sem suporte ao QRCode.js
+                document.getElementById("qrcode").innerHTML = "Para finalizar a compra, acesse: <a href='" + linkQRCode + "'>" + linkQRCode + "</a>";
             }
         }
     }
