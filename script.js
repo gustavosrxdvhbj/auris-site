@@ -137,6 +137,6 @@ login.onclick = () => {
     } else if (name.value === '') {
         window.alert('Preencha o usuário');
     } else {
-            window.location.href = 'index.html';
+            window.location.href = 'paginainicial.html';
         }
 }
