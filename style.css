@@ -278,3 +278,83 @@ footer {
         align-items: center;
     }
 }
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fundo com degradê */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0B3D2E, #1F6F61);
+}
+
+/* Card */
+.card {
+  background: #FDF6E3; /* mesmo tom usado nas caixas do outro CSS */
+  width: 320px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.25);
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 20px;
+  transform: translateY(-40px); /* Levanta o card */
+}
+
+/* Conteúdo do card */
+.card-content {
+  padding: 20px;
+}
+
+.card-content h1 {
+  margin-bottom: 16px;
+  font-size: 22px;
+  color: white;
+  background: #092E23;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+.card-content p {
+  font-size: 14px;
+  margin: 8px 0 4px;
+  text-align: left;
+  color: #092E23;
+  font-weight: bold;
+}
+
+.card-content input[type="text"],
+.card-content input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Botão */
+.card-content input[type="button"] {
+  background: #092E23;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 14pt;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.card-content input[type="button"]:hover {
+  background: #17544A;
+}
+
