@@ -262,6 +262,7 @@ body.login-page {
     text-align: center;
     padding-bottom: 20px;
     transform: translateY(-40px);
+    width: 400px; /* Adicionada esta linha */
 }
 
 /* Conteúdo do card */
