@@ -161,6 +161,6 @@ login.onclick = () => {
     }
     // passou em todas as validações
     else {
-        window.location.href = 'index.html';
+        window.location.href = 'paginainicial.html';
     }
 }
