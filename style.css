@@ -1,3 +1,15 @@
+/* ----------------------------------------------------------- */
+/* ESTILOS GLOBAIS E DA PÁGINA INICIAL (INDEX.HTML)          */
+/* ----------------------------------------------------------- */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fundo e Estilos Globais do Corpo */
 body {
     background: linear-gradient(135deg, #0B3D2E, #1F6F61);
     font: normal 15pt Arial;
@@ -9,6 +21,7 @@ body {
     flex-direction: column;
 }
 
+/* Estilo do Título Principal (h1) */
 h1 {
     text-align: center;
     font: normal 35pt Arial;
@@ -21,88 +34,7 @@ h1 {
     font-size: 35pt;
 }
 
-.produto {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    margin-bottom: 40px;
-    background-color: #FDF6E3;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    width: 800px;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.produto img {
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-}
-
-.produto .texto {
-    font-size: 15pt;
-    line-height: 1.5;
-}
-
-footer {
-    color: white;
-    text-align: center;
-    font-style: italic;
-    margin-top: auto;
-}
-
-.footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 10px;
-}
-
-.footer-btn {
-    background-color: #092E23;
-    color: white;
-    padding: 12px 32px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-size: 16pt;
-    transition: background 0.3s;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-}
-
-.footer-btn:hover {
-    background-color: #17544A;
-    color: #fff;
-}
-
-@media (max-width: 768px) {
-    .produto {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .produto .texto {
-        font-size: 14pt;
-    }
-
-    .slide-completo {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .lado-wrapper img {
-        width: 120px;
-    }
-
-    .slideshow {
-        width: 90%;
-        height: 300px;
-    }
-}
-
+/* Seção de Slideshow */
 .slide-completo {
     display: flex;
     justify-content: center;
@@ -167,6 +99,7 @@ footer {
     opacity: 1;
 }
 
+/* Botões Principais */
 #botao {
     width: 100%;
     display: flex;
@@ -193,20 +126,64 @@ footer {
     color: white;
 }
 
-#return{
-    font: 10px Arial;
+/* Rodapé */
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    margin-top: auto;
 }
 
-.voltar-btn {
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-btn {
+    background-color: #092E23;
+    color: white;
+    padding: 12px 32px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16pt;
+    transition: background 0.3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.footer-btn:hover {
     background-color: #17544A;
-    padding: 10px 15px;
-    border: 1px solid #17544A;
-    cursor: pointer;
-    text-align: right;
-    position: fixed;
-    top: 50px;
-    left: 20px;
-    border-radius: 16px;
+    color: #fff;
+}
+
+/* ----------------------------------------------------------- */
+/* ESTILOS DAS PÁGINAS DE PRODUTOS E PAGAMENTO                */
+/* ----------------------------------------------------------- */
+.produto {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 40px;
+    background-color: #FDF6E3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 800px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.produto img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+.produto .texto {
+    font-size: 15pt;
+    line-height: 1.5;
 }
 
 .produto-bg {
@@ -235,6 +212,22 @@ footer {
     line-height: 1.5;
 }
 
+#return {
+    font: 10px Arial;
+}
+
+.voltar-btn {
+    background-color: #17544A;
+    padding: 10px 15px;
+    border: 1px solid #17544A;
+    cursor: pointer;
+    text-align: right;
+    position: fixed;
+    top: 50px;
+    left: 20px;
+    border-radius: 16px;
+}
+
 .voltar {
     background-color: #17544A;
     padding: 10px 15px;
@@ -247,8 +240,111 @@ footer {
     border-radius: 16px;
 }
 
-/* Estilos para telas pequenas (smartphones e tablets) */
+/* ----------------------------------------------------------- */
+/* ESTILOS DO FORMULÁRIO (CRIAR.HTML)                         */
+/* ----------------------------------------------------------- */
+/* Fundo específico para a página de login */
+body.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0B3D2E, #1F6F61);
+}
+
+/* Card */
+.card {
+    background: #FDF6E3;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.25);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    transform: translateY(-40px);
+}
+
+/* Conteúdo do card */
+.card-content {
+    padding: 20px;
+}
+
+.card-content h1 {
+    margin-bottom: 16px;
+    font-size: 22px;
+    color: white;
+    background: #092E23;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+.card-content p {
+    font-size: 14px;
+    margin: 8px 0 4px;
+    text-align: left;
+    color: #092E23;
+    font-weight: bold;
+}
+
+.card-content input[type="text"],
+.card-content input[type="email"],
+.card-content input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Botão */
+.card-content input[type="button"] {
+    background: #092E23;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 14pt;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.card-content input[type="button"]:hover {
+    background: #17544A;
+}
+
+
+/* ----------------------------------------------------------- */
+/* MEDIA QUERIES (RESPONSIVIDADE)                             */
+/* ----------------------------------------------------------- */
 @media (max-width: 768px) {
+    .produto {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .produto .texto {
+        font-size: 14pt;
+    }
+
+    .slide-completo {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .lado-wrapper img {
+        width: 120px;
+    }
+
+    .slideshow {
+        width: 90%;
+        height: 300px;
+    }
+    
     .produto-bg {
         flex-direction: column;
         align-items: center;
@@ -276,87 +372,5 @@ footer {
     .footer-links {
         flex-direction: column;
         align-items: center;
-        
-        
     }
 }
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Fundo com degradê */
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #0B3D2E, #1F6F61);
-}
-
-/* Card */
-.card {
-  background: #FDF6E3;
-  border-radius: 12px;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.25);
-  overflow: hidden;
-  text-align: center;
-  padding-bottom: 20px;
-  transform: translateY(-40px); /* Levanta o card */
-}
-
-/* Conteúdo do card */
-.card-content {
-  padding: 20px;
-}
-
-.card-content h1 {
-  margin-bottom: 16px;
-  font-size: 22px;
-  color: white;
-  background: #092E23;
-  padding: 12px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
-}
-
-.card-content p {
-  font-size: 14px;
-  margin: 8px 0 4px;
-  text-align: left;
-  color: #092E23;
-  font-weight: bold;
-}
-
-.card-content input[type="text"],
-.card-content input[type="email"],
-.card-content input[type="password"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 12px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
-
-/* Botão */
-.card-content input[type="button"] {
-  background: #092E23;
-  color: white;
-  border: none;
-  padding: 12px;
-  width: 100%;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.3s;
-  font-size: 14pt;
-  font-weight: bold;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-}
-
-.card-content input[type="button"]:hover {
-  background: #17544A;
-}
-
