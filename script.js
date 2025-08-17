@@ -125,3 +125,18 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+
+//---------------------------------------parte---login--------------------
+let login = document.querySelector('#login');
+let pass = document.querySelector('#passwd');
+let name = document.querySelector('#user');
+login.onclick = () => {
+    if (pass.value === '') {
+        window.alert('Preencha a senha');
+    } else if (name.value === '') {
+        window.alert('Preencha o usuário');
+    } else {
+            window.location.href = 'index.html';
+        }
+}
