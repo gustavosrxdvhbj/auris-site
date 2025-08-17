@@ -128,15 +128,39 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 //---------------------------------------parte---login--------------------
-let login = document.querySelector('#login');
-let pass = document.querySelector('#passwd');
-let name = document.querySelector('#user');
+let login = document.querySelector('#login');     // botão
+let pass = document.querySelector('#pass');       // senha
+let name = document.querySelector('#user');       // usuário
+let email = document.querySelector('#email');     // email
+let passconf = document.querySelector('#passwd'); // confirmar senha
+
 login.onclick = () => {
-    if (pass.value === '') {
-        window.alert('Preencha a senha');
-    } else if (name.value === '') {
-        window.alert('Preencha o usuário');
-    } else {
-            window.location.href = 'paginainicial.html';
-        }
+    // campos vazios
+    if (name.value === '' || email.value === '' || pass.value === '' || passconf.value === '') {
+        window.alert('Faltam dados');
+    }
+    // senhas diferentes
+    else if (pass.value !== passconf.value) {
+        window.alert('As senhas não conferem');
+    }
+    // email inválido
+    else if (!email.value.includes('@') || !email.value.includes('.')) {
+        window.alert('Email inválido');
+    }
+    // nome muito curto
+    else if (name.value.length < 3) {
+        window.alert('O nome de usuário deve ter pelo menos 3 caracteres');
+    }
+    // nome muito longo
+    else if (name.value.length > 20) {
+        window.alert('O nome de usuário não pode ter mais de 20 caracteres');
+    }
+    // senha fraca
+    else if (pass.value.length < 6) {
+        window.alert('A senha deve ter pelo menos 6 caracteres');
+    }
+    // passou em todas as validações
+    else {
+        window.location.href = 'index.html';
+    }
 }
